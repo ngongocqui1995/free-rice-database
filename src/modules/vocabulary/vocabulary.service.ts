@@ -107,7 +107,7 @@ export class VocabularyService extends TypeOrmCrudService<Vocabulary> {
       .insert()
       .into(Vocabulary)
       .values([dto])
-      .onConflict(`("question", "answer") DO NOTHING`)
+      .onConflict(`("question", "answer") DO UPDATE SET "answer" = excluded."answer"`)
       .execute();
 
       await queryRunner.commitTransaction();
@@ -131,7 +131,7 @@ export class VocabularyService extends TypeOrmCrudService<Vocabulary> {
       .insert()
       .into(Vocabulary)
       .values(dto)
-      .onConflict(`("question", "answer") DO NOTHING`)
+      .onConflict(`("question", "answer") DO UPDATE SET "answer" = excluded."answer"`)
       .execute();
 
       await queryRunner.commitTransaction();

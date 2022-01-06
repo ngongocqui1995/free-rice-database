@@ -65,8 +65,6 @@ export class VocabularyController implements CrudController<Vocabulary> {
     return this.base.getOneBase(req);
   }
 
-  @UseGuards(JwtAuthGuard, RolesGuard)
-  @RequireRoles(ROLES.ROLE_ADMIN)
   @ApiHeader({
     name: 'Authorization',
     description: 'Bearer {{token}}',
