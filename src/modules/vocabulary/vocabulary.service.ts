@@ -33,11 +33,6 @@ export class VocabularyService extends TypeOrmCrudService<Vocabulary> {
     @ParsedBody() dto: CreateVocabularyDto,
     @I18nLang() lang: string
   ) {
-    const questionExist = await this.findOne({
-      where: { question: dto.question, id: Not(id) },
-    });
-    this.checkService.checkQuestionExist(!!questionExist);
-
     const [err, res] = await to(
       this.updateOne(req, <Vocabulary>dto),
     );
@@ -57,11 +52,6 @@ export class VocabularyService extends TypeOrmCrudService<Vocabulary> {
     @ParsedBody() dto: CreateVocabularyDto,
     @I18nLang() lang: string
   ) {
-    const questionExist = await this.findOne({
-      where: { question: dto.question, id: Not(id) },
-    });
-    this.checkService.checkQuestionExist(!!questionExist);
-
     const [err] = await to(
       this.replaceOne(req, <Vocabulary>dto),
     );
@@ -80,11 +70,6 @@ export class VocabularyService extends TypeOrmCrudService<Vocabulary> {
     @ParsedBody() dto: CreateVocabularyDto,
     @I18nLang() lang: string
   ) {
-    const questionExist = await this.findOne({
-      where: { question: dto.question },
-    });
-    this.checkService.checkQuestionExist(!!questionExist);
-
     const [err] = await to(this.createOne(req, <Vocabulary>dto));
     if (err) this.checkService.throwErrorSystem(err.message);
 
