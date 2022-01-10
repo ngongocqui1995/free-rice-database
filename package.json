@@ -46,7 +46,7 @@
     "bcrypt": "^5.0.1",
     "bytes": "^3.1.1",
     "check-disk-space": "^3.0.1",
-    "class-transformer": "^0.4.0",
+    "class-transformer": "0.4.0",
     "class-validator": "^0.13.1",
     "cross-env": "^7.0.3",
     "dotenv": "^8.2.0",
