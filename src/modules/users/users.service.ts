@@ -68,10 +68,7 @@ export class UsersService extends TypeOrmCrudService<User> {
     if (err) this.checkService.throwErrorSystem(err.message);
     return {
       status: HttpStatus.OK,
-      message: await this.checkService.i18n.translate('messages.ACTION.UPDATE', {
-        lang,
-        args: [{ name: await this.checkService.i18n.translate('models.'+this.model_name) }]
-      }),
+      message: 'Cập nhật thành công!'
     };
   }
 
@@ -103,10 +100,7 @@ export class UsersService extends TypeOrmCrudService<User> {
     if (err) this.checkService.throwErrorSystem(err.message);
     return {
       status: HttpStatus.OK,
-      message: await this.checkService.i18n.translate('messages.ACTION.UPDATE', {
-        lang,
-        args: [{ name: await this.checkService.i18n.translate('models.'+this.model_name) }]
-      }),
+      message: 'Cập nhật thành công!'
     };
   }
   
@@ -142,10 +136,7 @@ export class UsersService extends TypeOrmCrudService<User> {
 
     return {
       status: HttpStatus.OK,
-      message: await this.checkService.i18n.translate('messages.ACTION.CREATE', {
-        lang,
-        args: [{ name: await this.checkService.i18n.translate('models.'+this.model_name) }]
-      }),
+      message: 'Tạo thành công!'
     };
   }
 
@@ -192,10 +183,7 @@ export class UsersService extends TypeOrmCrudService<User> {
 
     return {
       status: HttpStatus.OK,
-      message: await this.checkService.i18n.translate('messages.ACTION.UPDATE', {
-        lang,
-        args: [{ name: await this.checkService.i18n.translate('models.'+this.status_name) }]
-      }),
+      message: 'Cập nhật thành công!'
     }
   }
 
@@ -230,7 +218,7 @@ export class UsersService extends TypeOrmCrudService<User> {
     }
     return {
       status: HttpStatus.OK,
-      message: await this.checkService.i18n.translate('messages.RESET_PASSWORD.PASSWORD_CHANGED'),
+      message: 'Cập nhật thành công!'
     }
   }
 }

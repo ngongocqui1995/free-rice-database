@@ -1,4 +1,4 @@
 export interface LoginRsp {
   readonly token: string;
-  readonly message: Promise<any>;
+  readonly message: string;
 }

@@ -45,9 +45,7 @@ export class AuthService extends TypeOrmCrudService<User> {
 
     return {
       token,
-      message: await this.checkService.i18n.translate('messages.AUTH.GET', {
-        lang,
-      }),
+      message: 'Đăng nhập thành công'
     };
   }
 }

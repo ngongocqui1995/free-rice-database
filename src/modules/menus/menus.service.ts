@@ -45,10 +45,7 @@ export class MenusService extends TypeOrmCrudService<Menu> {
     if (err) this.checkService.throwErrorSystem(err.message);
     return {
       data: res,
-      message: await this.checkService.i18n.translate('messages.ACTION.UPDATE', {
-        lang,
-        args: [{ name: await this.checkService.i18n.translate('models.'+this.model_name) }]
-      }),
+      message: 'Cập nhật thành công!'
     };
   }
 
@@ -69,10 +66,7 @@ export class MenusService extends TypeOrmCrudService<Menu> {
     if (err) this.checkService.throwErrorSystem(err.message);
     return {
       status: HttpStatus.OK,
-      message: await this.checkService.i18n.translate('messages.ACTION.UPDATE', {
-        lang,
-        args: [{ name: await this.checkService.i18n.translate('models.'+this.model_name) }]
-      }),
+      message: 'Cập nhật thành công!'
     };
   }
 
@@ -91,10 +85,7 @@ export class MenusService extends TypeOrmCrudService<Menu> {
 
     return {
       status: HttpStatus.OK,
-      message: await this.checkService.i18n.translate('messages.ACTION.CREATE', {
-        lang,
-        args: [{ name: await this.checkService.i18n.translate('models.'+this.model_name) }]
-      }),
+      message: 'Tạo thành công!'
     };
   }
 
@@ -120,10 +111,6 @@ export class MenusService extends TypeOrmCrudService<Menu> {
     
     return {
       status: HttpStatus.OK,
-      message: await this.checkService.i18n.translate('messages.ACTION.UPDATE', {
-        lang,
-        args: [{ name: await this.checkService.i18n.translate('models.'+this.status_name) }]
-      }),
     }
   }
 }

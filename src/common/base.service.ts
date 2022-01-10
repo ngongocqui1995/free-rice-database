@@ -1,11 +1,9 @@
 import {
   HttpException,
   HttpStatus,
-  Inject,
   Injectable,
   Logger,
 } from '@nestjs/common';
-import { I18nService } from 'nestjs-i18n';
 import { ENUM_STATUS } from './enum';
 
 const jsdom = require("jsdom");
@@ -13,9 +11,6 @@ const jsdom = require("jsdom");
 @Injectable()
 export class BaseService {
   logger: Logger = new Logger(this.constructor.name);
-
-  @Inject()
-  i18n: I18nService;
 
   comparePassword = (newPassword: string, confirmPassword: string) => {
     if (newPassword === confirmPassword) return;

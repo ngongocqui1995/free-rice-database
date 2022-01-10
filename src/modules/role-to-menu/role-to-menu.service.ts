@@ -39,10 +39,7 @@ export class RoleToMenuService extends TypeOrmCrudService<RoleToMenu> {
     if (err) this.checkService.throwErrorSystem(err.message);
     return {
       status: HttpStatus.OK,
-      message: await this.checkService.i18n.translate('messages.ACTION.DELETE', {
-        lang,
-        args: [{ name: await this.checkService.i18n.translate('models.'+this.model_name) }]
-      }),
+      message: 'Xoá thành công!'
     };
   }
 
@@ -73,10 +70,7 @@ export class RoleToMenuService extends TypeOrmCrudService<RoleToMenu> {
     if (err) this.checkService.throwErrorSystem(err.message);
     return {
       status: HttpStatus.OK,
-      message: await this.checkService.i18n.translate('messages.ACTION.UPDATE', {
-        lang,
-        args: [{ name: await this.checkService.i18n.translate('models.'+this.model_name) }]
-      }),
+      message: 'Cập nhật thành công!'
     };
   }
 
@@ -107,10 +101,7 @@ export class RoleToMenuService extends TypeOrmCrudService<RoleToMenu> {
     if (err) this.checkService.throwErrorSystem(err.message);
     return {
       status: HttpStatus.OK,
-      message: await this.checkService.i18n.translate('messages.ACTION.UPDATE', {
-        lang,
-        args: [{ name: await this.checkService.i18n.translate('models.'+this.model_name) }]
-      }),
+      message: 'Cập nhật thành công!'
     };
   }
 
@@ -139,10 +130,7 @@ export class RoleToMenuService extends TypeOrmCrudService<RoleToMenu> {
 
     return {
       status: HttpStatus.OK,
-      message: await this.checkService.i18n.translate('messages.ACTION.CREATE', {
-        lang,
-        args: [{ name: await this.checkService.i18n.translate('models.'+this.model_name) }]
-      }),
+      message: 'Tạo thành công!'
     };
   }
 }
