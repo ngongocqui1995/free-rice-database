@@ -11,7 +11,7 @@ import {
 import { ApiProperty } from '@nestjs/swagger';
 import { Exclude } from 'class-transformer';
 import { BaseEntity } from '../../../common/entities/base.entity';
-import { Role } from 'src/modules/roles/entities/role.entity';
+import { Role } from '../../../modules/roles/entities/role.entity';
 
 @Entity('users')
 export class User extends BaseEntity {

@@ -11,7 +11,7 @@ import {
 } from 'class-validator';
 import { ApiProperty } from '@nestjs/swagger';
 import { CrudValidationGroups } from '@nestjsx/crud';
-import { Role } from 'src/modules/roles/entities/role.entity';
+import { Role } from '../../../modules/roles/entities/role.entity';
 import { Transform } from 'class-transformer';
 
 const { UPDATE, CREATE } = CrudValidationGroups;

@@ -6,7 +6,7 @@ import { User } from './entities/user.entity';
 import { BaseService } from '../../common/base.service';
 import { PasswordHasherService } from '../../auth/password-hasher/password-hasher.service';
 import { ConfigModule } from '@nestjs/config';
-import { BaseController } from 'src/common/base.controller';
+import { BaseController } from '../../common/base.controller';
 import { RolesService } from '../roles/roles.service';
 import { Role } from '../roles/entities/role.entity';
 import { ValidAddressService } from '../valid-address/valid-address.service';

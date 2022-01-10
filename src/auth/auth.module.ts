@@ -9,11 +9,11 @@ import { User } from '../modules/users/entities/user.entity';
 import { ConfigModule } from '@nestjs/config';
 import { UsersService } from '../modules/users/users.service';
 import { JwtStrategyService } from './jwt-strategy/jwt-strategy.service';
-import { BaseController } from 'src/common/base.controller';
-import { Role } from 'src/modules/roles/entities/role.entity';
-import { RolesService } from 'src/modules/roles/roles.service';
-import { ValidAddressService } from 'src/modules/valid-address/valid-address.service';
-import { ValidAddress } from 'src/modules/valid-address/entities/valid-address.entity';
+import { BaseController } from '../common/base.controller';
+import { Role } from '../modules/roles/entities/role.entity';
+import { RolesService } from '../modules/roles/roles.service';
+import { ValidAddressService } from '../modules/valid-address/valid-address.service';
+import { ValidAddress } from '../modules/valid-address/entities/valid-address.entity';
 
 @Module({
   imports: [

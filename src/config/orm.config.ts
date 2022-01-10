@@ -1,11 +1,11 @@
 import { TypeOrmModuleOptions } from '@nestjs/typeorm';
-import { Menu } from 'src/modules/menus/entities/menu.entity';
-import { Permission } from 'src/modules/permission/entities/permission.entity';
-import { RoleToMenu } from 'src/modules/role-to-menu/entities/role-to-menu.entity';
-import { Role } from 'src/modules/roles/entities/role.entity';
-import { User } from 'src/modules/users/entities/user.entity';
-import { ValidAddress } from 'src/modules/valid-address/entities/valid-address.entity';
-import { Vocabulary } from 'src/modules/vocabulary/entities/vocabulary.entity';
+import { Menu } from '../modules/menus/entities/menu.entity';
+import { Permission } from '../modules/permission/entities/permission.entity';
+import { RoleToMenu } from '../modules/role-to-menu/entities/role-to-menu.entity';
+import { Role } from '../modules/roles/entities/role.entity';
+import { User } from '../modules/users/entities/user.entity';
+import { ValidAddress } from '../modules/valid-address/entities/valid-address.entity';
+import { Vocabulary } from '../modules/vocabulary/entities/vocabulary.entity';
 
 interface ConfigState {
   database: TypeOrmModuleOptions;

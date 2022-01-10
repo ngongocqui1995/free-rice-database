@@ -13,8 +13,8 @@ import { BaseService } from '../../common/base.service';
 import to from 'await-to-js';
 import { I18nLang } from 'nestjs-i18n';
 import { Connection, Not } from 'typeorm';
-import { ENUM_MODEL } from 'src/common';
-import { UpdateStatusDTO } from 'src/common/dto/update-status.dto';
+import { ENUM_MODEL } from '../../common';
+import { UpdateStatusDTO } from '../../common/dto/update-status.dto';
 
 @Injectable()
 export class RolesService extends TypeOrmCrudService<Role> {

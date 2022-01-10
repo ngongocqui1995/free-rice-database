@@ -5,13 +5,13 @@ import { UpdateValidAddressDto } from './dto/update-valid-address.dto';
 import { Crud, CrudController, CrudRequest, Override, ParsedBody, ParsedRequest } from '@nestjsx/crud';
 import { ValidAddress } from './entities/valid-address.entity';
 import { ApiHeader, ApiParam, ApiResponse, ApiTags } from '@nestjs/swagger';
-import { BaseController } from 'src/common/base.controller';
-import { JwtAuthGuard } from 'src/auth/guards/jwt-auth.guard';
-import { RolesGuard } from 'src/auth/guards/roles-guard';
-import { RequireRoles } from 'src/auth/decorator/roles.decorator';
+import { BaseController } from '../../common/base.controller';
+import { JwtAuthGuard } from '../../auth/guards/jwt-auth.guard';
+import { RolesGuard } from '../../auth/guards/roles-guard';
+import { RequireRoles } from '../../auth/decorator/roles.decorator';
 import { ROLES } from '../roles/contants/contants';
 import { I18nLang } from 'nestjs-i18n';
-import { UpdateStatusDTO } from 'src/common/dto/update-status.dto';
+import { UpdateStatusDTO } from '../../common/dto/update-status.dto';
 
 @Crud({
   model: {

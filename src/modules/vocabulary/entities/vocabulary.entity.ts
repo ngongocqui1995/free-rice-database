@@ -1,5 +1,5 @@
 import { ApiProperty } from "@nestjs/swagger";
-import { BaseEntity } from "src/common/entities/base.entity";
+import { BaseEntity } from "../../../common/entities/base.entity";
 import { Column, Entity, Index, PrimaryGeneratedColumn, Unique } from "typeorm";
 
 @Entity('vocabulary')

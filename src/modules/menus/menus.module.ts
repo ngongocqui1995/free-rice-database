@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
 import { MenusService } from './menus.service';
 import { MenusController } from './menus.controller';
-import { BaseService } from 'src/common/base.service';
-import { BaseController } from 'src/common/base.controller';
+import { BaseService } from '../../common/base.service';
+import { BaseController } from '../../common/base.controller';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from '@nestjs/config';
 import { Menu } from './entities/menu.entity';

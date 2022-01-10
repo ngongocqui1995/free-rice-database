@@ -1,7 +1,7 @@
 import { Injectable, Logger } from '@nestjs/common';
-import { GlobalService } from 'src/common/global.service';
+import { GlobalService } from '../../common/global.service';
 import { Connection } from 'typeorm';
-import { VocabularyService } from 'src/modules/vocabulary/vocabulary.service';
+import { VocabularyService } from '../../modules/vocabulary/vocabulary.service';
 
 const configPuppeterr: any = {
   args: ["--disable-gpu", "--no-sandbox", "--disable-setuid-sandbox", "--start-maximized"],

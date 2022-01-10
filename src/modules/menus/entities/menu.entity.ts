@@ -1,6 +1,6 @@
 import { ApiProperty } from "@nestjsx/crud/lib/crud";
-import { BaseEntity } from "src/common/entities/base.entity";
-import { RoleToMenu } from "src/modules/role-to-menu/entities/role-to-menu.entity";
+import { BaseEntity } from "../../../common/entities/base.entity";
+import { RoleToMenu } from "../../../modules/role-to-menu/entities/role-to-menu.entity";
 import { Column, Entity, Index, OneToMany, PrimaryGeneratedColumn, Unique } from "typeorm";
 
 @Entity('menus')

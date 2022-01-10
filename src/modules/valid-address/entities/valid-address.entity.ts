@@ -1,5 +1,5 @@
 import { ApiProperty } from "@nestjsx/crud/lib/crud";
-import { BaseEntity } from "src/common/entities/base.entity";
+import { BaseEntity } from "../../../common/entities/base.entity";
 import { Column, Entity, Index, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity('valid-address')

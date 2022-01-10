@@ -4,8 +4,8 @@ import { ValidAddressController } from './valid-address.controller';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ValidAddress } from './entities/valid-address.entity';
-import { BaseService } from 'src/common/base.service';
-import { BaseController } from 'src/common/base.controller';
+import { BaseService } from '../../common/base.service';
+import { BaseController } from '../../common/base.controller';
 
 @Module({
   imports: [ConfigModule.forRoot(), TypeOrmModule.forFeature([ValidAddress])],

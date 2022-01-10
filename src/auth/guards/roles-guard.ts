@@ -1,9 +1,9 @@
 import { Injectable, CanActivate, ExecutionContext, Logger } from '@nestjs/common';
 import { Reflector } from '@nestjs/core';
-import { ENUM_STATUS } from 'src/common';
-import { ROLES } from 'src/modules/roles/contants/contants';
-import { User } from 'src/modules/users/entities/user.entity';
-import { ValidAddressService } from 'src/modules/valid-address/valid-address.service';
+import { ENUM_STATUS } from '../../common';
+import { ROLES } from '../../modules/roles/contants/contants';
+import { User } from '../../modules/users/entities/user.entity';
+import { ValidAddressService } from '../../modules/valid-address/valid-address.service';
 import { In } from 'typeorm';
 
 @Injectable()

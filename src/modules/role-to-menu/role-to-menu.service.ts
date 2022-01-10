@@ -4,8 +4,8 @@ import { CrudRequest, CrudService, ParsedBody, ParsedRequest } from '@nestjsx/cr
 import { TypeOrmCrudService } from '@nestjsx/crud-typeorm';
 import to from 'await-to-js';
 import { I18nLang } from 'nestjs-i18n';
-import { ENUM_MODEL } from 'src/common';
-import { BaseService } from 'src/common/base.service';
+import { ENUM_MODEL } from '../../common';
+import { BaseService } from '../../common/base.service';
 import { Connection, Not } from 'typeorm';
 import { MenusService } from '../menus/menus.service';
 import { Permission } from '../permission/entities/permission.entity';

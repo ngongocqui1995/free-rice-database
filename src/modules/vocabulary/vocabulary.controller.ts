@@ -5,10 +5,10 @@ import { UpdateVocabularyDto } from './dto/update-vocabulary.dto';
 import { Vocabulary } from './entities/vocabulary.entity';
 import { ApiHeader, ApiTags } from '@nestjs/swagger';
 import { Crud, CrudController, CrudRequest, Override, ParsedBody, ParsedRequest } from '@nestjsx/crud';
-import { JwtAuthGuard } from 'src/auth/guards/jwt-auth.guard';
-import { RolesGuard } from 'src/auth/guards/roles-guard';
+import { JwtAuthGuard } from '../../auth/guards/jwt-auth.guard';
+import { RolesGuard } from '../../auth/guards/roles-guard';
 import { ROLES } from '../roles/contants/contants';
-import { RequireRoles } from 'src/auth/decorator/roles.decorator';
+import { RequireRoles } from '../../auth/decorator/roles.decorator';
 import { I18nLang } from 'nestjs-i18n';
 
 @ApiTags('Vocabulary')

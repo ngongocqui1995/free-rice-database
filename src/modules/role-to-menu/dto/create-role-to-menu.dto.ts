@@ -1,7 +1,7 @@
 import { ApiProperty } from "@nestjsx/crud/lib/crud";
 import { IsArray, IsIn, IsNotEmpty, IsString } from "class-validator";
-import { Menu } from "src/modules/menus/entities/menu.entity";
-import { Role } from "src/modules/roles/entities/role.entity";
+import { Menu } from "../../../modules/menus/entities/menu.entity";
+import { Role } from "../../../modules/roles/entities/role.entity";
 import { PermissionCreate } from "../interfaces/permission";
 
 export class CreateRoleToMenuDto {

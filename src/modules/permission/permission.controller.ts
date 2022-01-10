@@ -5,17 +5,17 @@ import { UpdatePermissionDto } from './dto/update-permission.dto';
 import { Permission } from './entities/permission.entity';
 import { ApiHeader, ApiParam, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { Crud, CrudController, CrudRequest, Override, ParsedBody, ParsedRequest } from '@nestjsx/crud';
-import { BaseController } from 'src/common/base.controller';
+import { BaseController } from '../../common/base.controller';
 import { I18nLang } from 'nestjs-i18n';
 import { RoleToMenuService } from '../role-to-menu/role-to-menu.service';
-import { ENUM_STATUS } from 'src/common';
+import { ENUM_STATUS } from '../../common';
 import { SelectQueryBuilder } from 'typeorm';
 import { RoleToMenu } from '../role-to-menu/entities/role-to-menu.entity';
-import { JwtAuthGuard } from 'src/auth/guards/jwt-auth.guard';
-import { RolesGuard } from 'src/auth/guards/roles-guard';
+import { JwtAuthGuard } from '../../auth/guards/jwt-auth.guard';
+import { RolesGuard } from '../../auth/guards/roles-guard';
 import { ROLES } from '../roles/contants/contants';
-import { RequireRoles } from 'src/auth/decorator/roles.decorator';
-import { UpdateStatusDTO } from 'src/common/dto/update-status.dto';
+import { RequireRoles } from '../../auth/decorator/roles.decorator';
+import { UpdateStatusDTO } from '../../common/dto/update-status.dto';
 
 @ApiTags('Permissions')
 @Crud({

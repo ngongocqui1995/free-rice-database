@@ -4,7 +4,7 @@ import { VocabularyController } from './vocabulary.controller';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Vocabulary } from './entities/vocabulary.entity';
-import { BaseService } from 'src/common/base.service';
+import { BaseService } from '../../common/base.service';
 import { ValidAddressService } from '../valid-address/valid-address.service';
 import { ValidAddress } from '../valid-address/entities/valid-address.entity';
 

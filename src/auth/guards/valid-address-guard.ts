@@ -1,6 +1,6 @@
 import { Injectable, CanActivate, ExecutionContext, Logger } from '@nestjs/common';
-import { ENUM_STATUS } from 'src/common';
-import { ValidAddressService } from 'src/modules/valid-address/valid-address.service';
+import { ENUM_STATUS } from '../../common';
+import { ValidAddressService } from '../../modules/valid-address/valid-address.service';
 import { In } from 'typeorm';
 
 @Injectable()

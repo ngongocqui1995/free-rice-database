@@ -8,12 +8,12 @@ import { CreateRoleDto } from './dto/create-role.dto';
 import { UpdateRoleDto } from './dto/update-role.dto';
 import { I18nLang } from 'nestjs-i18n';
 import { UsersService } from '../users/users.service';
-import { ENUM_MODEL, ENUM_STATUS } from 'src/common';
-import { JwtAuthGuard } from 'src/auth/guards/jwt-auth.guard';
-import { RolesGuard } from 'src/auth/guards/roles-guard';
+import { ENUM_MODEL, ENUM_STATUS } from '../../common';
+import { JwtAuthGuard } from '../../auth/guards/jwt-auth.guard';
+import { RolesGuard } from '../../auth/guards/roles-guard';
 import { ROLES } from './contants/contants';
-import { RequireRoles } from 'src/auth/decorator/roles.decorator';
-import { UpdateStatusDTO } from 'src/common/dto/update-status.dto';
+import { RequireRoles } from '../../auth/decorator/roles.decorator';
+import { UpdateStatusDTO } from '../../common/dto/update-status.dto';
 
 @ApiTags('Roles')
 @Crud({

@@ -4,7 +4,7 @@ import { ApiTags, ApiHeader } from '@nestjs/swagger';
 import { LoginUserDto } from '../modules/users/dto/login-user.dto';
 import { LoginRsp } from '../modules/users/interfaces/user';
 import { I18nLang } from 'nestjs-i18n';
-import { ENUM_MODEL } from 'src/common';
+import { ENUM_MODEL } from '../common';
 import { JwtAuthGuard } from './guards/jwt-auth.guard';
 import { ValidAddressGuard } from './guards/valid-address-guard';
 
