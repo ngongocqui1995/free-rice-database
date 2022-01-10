@@ -48,7 +48,6 @@
     "check-disk-space": "^3.0.1",
     "class-transformer": "^0.4.0",
     "class-validator": "^0.13.1",
-    "compressing": "^1.5.1",
     "cross-env": "^7.0.3",
     "dotenv": "^8.2.0",
     "fast-xml-parser": "^3.20.3",
@@ -67,7 +66,6 @@
     "moment": "^2.29.1",
     "multer": "^1.4.3",
     "nestjs-i18n": "8.0.10",
-    "nodejs-captcha": "^0.0.6",
     "nodejs-file-downloader": "^4.8.1",
     "passport": "^0.4.1",
     "passport-facebook": "^3.0.0",
@@ -81,13 +79,9 @@
     "rimraf": "^3.0.2",
     "rxjs": "^6.6.3",
     "rxjs-compat": "^6.6.3",
-    "split-file": "^2.2.2",
     "swagger-ui-express": "^4.1.6",
-    "translate-json-object": "^2.3.7",
     "typeorm": "^0.2.32",
-    "uid": "^2.0.0",
-    "utf8-bytes": "^0.0.1",
-    "util": "^0.12.4"
+    "uid": "^2.0.0"
   },
   "devDependencies": {
     "@types/cron": "^1.7.3",
