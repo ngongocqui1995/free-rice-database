@@ -30,6 +30,9 @@ import { I18nLang } from 'nestjs-i18n';
       field: 'id',
     },
   },
+  query: {
+    cache: 86400000
+  }
 })
 @Controller('vocabulary')
 export class VocabularyController implements CrudController<Vocabulary> {
@@ -46,7 +49,7 @@ export class VocabularyController implements CrudController<Vocabulary> {
     description: 'Bearer {{token}}',
   })
   @Override()
-  getMany(
+  async getMany(
     @ParsedRequest() req: CrudRequest,
   ) {
     return this.base.getManyBase(req);

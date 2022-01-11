@@ -9,6 +9,9 @@
         "USER_POSTGRES": "qkipbbkc",
         "PASS_POSTGRES": "kgl5JnoPsbvYWF9u7yEqr8inAz2shUaI",
         "DB_POSTGRES": "qkipbbkc",
+        "HOST_REDIS": "redis-14526.c91.us-east-1-3.ec2.cloud.redislabs.com",
+        "PORT_REDIS": "14526",
+        "PASS_REDIS": "YjqQgbpdv4YCLO4ArNyTqqrl3qYXN8kk",
         "DEFAULT_LANGUAGE": "vi",
         "SERVER_URL": "https://api.sangdev.site/",
         "SERVER_REDIRECT_URL": "https://api.sangdev.site/"
