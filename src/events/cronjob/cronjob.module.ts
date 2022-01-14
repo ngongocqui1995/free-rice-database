@@ -1,5 +1,6 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { AccountService } from '../../modules/account/account.service';
 import { BaseController } from '../../common/base.controller';
 import { BaseService } from '../../common/base.service';
 import { GlobalService } from '../../common/global.service';
@@ -10,6 +11,6 @@ import { CronjobService } from './cronjob.service';
 @Module({
   imports: [TypeOrmModule.forFeature([Vocabulary])],
   controllers: [],
-  providers: [CronjobService, BaseService, GlobalService, BaseController, VocabularyService]
+  providers: [CronjobService, BaseService, GlobalService, BaseController, VocabularyService, AccountService]
 })
 export class CronjobModule {}
