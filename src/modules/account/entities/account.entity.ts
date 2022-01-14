@@ -1,7 +1,8 @@
 import { ApiProperty } from "@nestjsx/crud/lib/crud";
 import { BaseEntity } from "src/common/entities/base.entity";
-import { Column, Index, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, Index, PrimaryGeneratedColumn } from "typeorm";
 
+@Entity('account')
 export class Account extends BaseEntity {
   @ApiProperty({
     type: String,
