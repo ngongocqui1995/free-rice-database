@@ -46,4 +46,11 @@ export class Account extends BaseEntity {
   })
   @Column({ type: 'varchar' })
   server: string;
+
+  @ApiProperty({
+    type: String,
+    required: true,
+  })
+  @Column({ type: 'varchar' })
+  server: string;
 }
