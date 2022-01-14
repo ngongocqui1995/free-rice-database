@@ -19,6 +19,7 @@ import { MenusModule } from './modules/menus/menus.module';
 import { PermissionModule } from './modules/permission/permission.module';
 import { RoleToMenuModule } from './modules/role-to-menu/role-to-menu.module';
 import { ValidAddressModule } from './modules/valid-address/valid-address.module';
+import { AccountModule } from './modules/account/account.module';
 
 @Module({
   imports: [
@@ -38,6 +39,7 @@ import { ValidAddressModule } from './modules/valid-address/valid-address.module
     RoleToMenuModule,
     ValidAddressModule,
     VocabularyModule,
+    AccountModule,
   ],
   controllers: [AppController],
   providers: [
