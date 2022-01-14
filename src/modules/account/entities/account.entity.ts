@@ -38,5 +38,12 @@ export class Account extends BaseEntity {
     required: true,
   })
   @Column({ type: 'varchar' })
+  heroku: string;
+
+  @ApiProperty({
+    type: String,
+    required: true,
+  })
+  @Column({ type: 'varchar' })
   server: string;
 }
