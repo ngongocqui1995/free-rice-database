@@ -10,6 +10,7 @@ import { RolesGuard } from '../../auth/guards/roles-guard';
 import { ROLES } from '../roles/contants/contants';
 import { RequireRoles } from '../../auth/decorator/roles.decorator';
 import { I18nLang } from 'nestjs-i18n';
+import { In } from 'typeorm';
 
 @ApiTags('Vocabulary')
 @Crud({
@@ -52,7 +53,17 @@ export class VocabularyController implements CrudController<Vocabulary> {
   async getMany(
     @ParsedRequest() req: CrudRequest,
   ) {
-    return this.base.getManyBase(req);
+    const filter = req.parsed.filter;
+    const findQuestion = filter.find((it) => it.field === 'question');
+    const findAnswer = filter.find((it) => it.field === 'answer');
+    
+    return this.service.find({ 
+      where: { question: findQuestion.value, answer: In(findAnswer.value) },
+      cache: {
+        id: findQuestion.value,
+        milliseconds: 86400000
+      }
+    });
   }
 
   @ApiHeader({
