@@ -16,7 +16,7 @@ export class Account extends BaseEntity {
     type: String,
     required: true,
   })
-  @Column({ type: 'varchar' })
+  @Column({ type: 'varchar', unique: true })
   index: string;
 
   @ApiProperty({
