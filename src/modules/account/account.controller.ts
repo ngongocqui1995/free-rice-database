@@ -6,7 +6,7 @@ import { CreateAccountDto } from './dto/create-account.dto';
 import { UpdateAccountDto } from './dto/update-account.dto';
 import { Account } from './entities/account.entity';
 
-@ApiTags('Menus')
+@ApiTags('Account')
 @Crud({
   model: {
     type: Account,
