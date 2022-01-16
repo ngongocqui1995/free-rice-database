@@ -34,5 +34,6 @@ export class CronjobService {
       if (i === 0) await to(axios.get(`https://free-rice-api.herokuapp.com/job/${i}`));
       if (i !== 0) await to(axios.get(`https://free-rice-api-${i}.herokuapp.com/job/${i}`));
     }
+	await to(axios.get(`https://free-bitcoin-api.herokuapp.com/job`));
   }
 }
